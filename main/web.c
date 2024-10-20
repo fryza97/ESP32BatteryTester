@@ -16,28 +16,26 @@ const char *web_string1 = "<!DOCTYPE html>\
   margin: 4px 2px;\
   cursor: pointer;\
 }\
-\
-.button1 {} /* RED */\
 </style>\
 </head>\
 <body>\
 \
 <h1>Battery tester on ESP32</h1>\
-<p>Click button to make measurment.<br>\
-Make sure voltage source is connected propertly<br>\ 
-Red probe MAX 12 V<br>\
-Green probe MAX 3.3 V<br>\
-Black probe to negative pole\
-</p>\
 \
-<button class=\"button button1\" onclick=\"window.location.href='/'\">Get Voltage</button>\
+<p>Click button to take measurement.</p>\
+<p>Red probe - MAX 12 V</p>\
+<p>Green probe - MAX 3.3 V</p>\
+<p>Black probe - connect to negative pole</p>\
+\
+<button class=\"button\" onclick=\"window.location.href='/'\">Get Voltage</button>\
 \
 <p>Voltage - CH1: ";
 
-const char *web_string2 = "<br></p>\
-<p>Voltage - CH2:";
+const char *web_string2 = "</p>\
+\
+<p>Voltage - CH2: ";
 
 const char *web_string3 = "</p>\
-\
 </body>\
 </html>";
+
