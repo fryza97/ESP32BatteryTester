@@ -34,10 +34,10 @@ Black probe to negative pole\
 \
 <p>Voltage - CH1: ";
 
-const char *web_string2 = "mV<br></p>\
-<p>Voltage - CH2: ";
+const char *web_string2 = "<br></p>\
+<p>Voltage - CH2:";
 
-const char *web_string3 = "mV</p>\
+const char *web_string3 = "</p>\
 \
 </body>\
 </html>";
