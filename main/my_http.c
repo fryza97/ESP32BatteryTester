@@ -1,17 +1,39 @@
 #include "my_http.h"
+#include "my_adc.h"
 #include "web.c"
+#include <stdio.h>
+#include <string.h>
 
 extern const char *TAG;
-extern float adc_voltage;
-char temp[450];
+extern char temp[650];
+
+static void format_voltage(int *voltage){
+    char voltage1[20];
+    char voltage2[20];
+
+    if(voltage[0] < 3250)
+        strcpy(voltage1, "N/C");
+    else
+        sprintf(voltage1, "%2d.%2d V", voltage[0]/1000, ((voltage[0]%1000)/100));
+    
+    if(voltage[1] < 500)
+        strcpy(voltage2, "N/C");
+    else
+        sprintf(voltage2, "%4d mV", voltage[1]);
+
+    sprintf(temp, "%s %s %s %s %s", web_string1, voltage1, web_string2, voltage2, web_string3);
+}
 
 /* An HTTP GET handler */
 esp_err_t voltage_handler(httpd_req_t *req){
     esp_err_t error;
+
+    int adc_voltage[2];
+
+    adc_single_start(adc_voltage);
+    format_voltage(adc_voltage);
     
     ESP_LOGI(TAG, "Voltage measurement completed!");
-
-    sprintf(temp, "%s %5.2f %s", web_string1, adc_voltage, web_string2);
 
     req->user_ctx = (void*) temp;
     const char *response = (const char *) req->user_ctx;

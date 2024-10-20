@@ -4,8 +4,7 @@
 #include "my_http.h"
 
 const char *TAG = "esp32 wifi";
-
-float adc_voltage = 0;
+char temp[450];
 
 void app_main(void)
 {

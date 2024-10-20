@@ -22,14 +22,22 @@ const char *web_string1 = "<!DOCTYPE html>\
 </head>\
 <body>\
 \
-<h1>Voltage meter on ESP32</h1>\
-<p>Click button to make measurment. Make sure is voltage<br> source is connected propertly to voltage connector.</p>\
+<h1>Battery tester on ESP32</h1>\
+<p>Click button to make measurment.<br>\
+Make sure voltage source is connected propertly<br>\ 
+Red probe MAX 12 V<br>\
+Green probe MAX 3.3 V<br>\
+Black probe to negative pole\
+</p>\
 \
 <button class=\"button button1\" onclick=\"window.location.href='/'\">Get Voltage</button>\
 \
-<p>Voltage:";
+<p>Voltage - CH1: ";
 
-const char *web_string2 = "</p>\
+const char *web_string2 = "mV<br></p>\
+<p>Voltage - CH2: ";
+
+const char *web_string3 = "mV</p>\
 \
 </body>\
 </html>";

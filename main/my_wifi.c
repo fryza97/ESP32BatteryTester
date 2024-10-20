@@ -1,6 +1,6 @@
 #include "my_wifi.h"
 
-#define WIFI_SSID      "ESP32-voltagemeter"
+#define WIFI_SSID      "ESP32-batterytester"
 #define WIFI_PASS      "FullMetalJacketESP32"
 #define WIFI_CHANNEL   1
 #define STA_CONN       4
