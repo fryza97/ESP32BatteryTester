@@ -13,7 +13,7 @@ The device creates a Wi-Fi access point named "ESP32 - batterytester". After con
 The tester utilizes two channels of ADC1 (channels 4 and 5), enabling simultaneous measurement of two batteries.
 
 ## Web Interface
-| ![image](https://github.com/user-attachments/assets/5066aab6-7afc-4cd8-b94d-e702210f31ee) | ![image](https://github.com/user-attachments/assets/4ae00c53-346c-42bd-a434-c38bef4a366a)|
+| ![image](https://github.com/user-attachments/assets/e3b8b3e2-7a1f-4eb7-91a2-9dae201d017c) | ![image](https://github.com/user-attachments/assets/8ed2df75-227b-43eb-815f-028f88e54324) |
 |------------|------------|
 | *Image 2: Website layout when probes are not connected* | *Image 3: Website layout showing measurements (CH1: 5V, CH2: 3.3V)* |
 
