@@ -15,7 +15,7 @@ The tester utilizes two channels of ADC1 (channels 4 and 5), enabling simultaneo
 ## Web Interface
 | ![image](https://github.com/user-attachments/assets/e3b8b3e2-7a1f-4eb7-91a2-9dae201d017c) | ![image](https://github.com/user-attachments/assets/8ed2df75-227b-43eb-815f-028f88e54324) |
 |------------|------------|
-| *Image 2: Website layout when probes are not connected* | *Image 3: Website layout showing measurements (CH1: 5V, CH2: 3.3V)* |
+| *Image 2: Website layout when probes are not connected* | *Image 3: Website layout showing measurements (CH1: 12V, CH2: 3.3V)* |
 
 
 
